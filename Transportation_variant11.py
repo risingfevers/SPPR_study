@@ -1,5 +1,6 @@
 from scipy.optimize import linprog
 import numpy as np
+# Транспортная Задача номер 11 из списка, нерешаемая по прочине превышения потребности перед запасаи (
 
 supply = [300, 200, 100, 200, 300]
 demand = [300, 200, 300, 100, 400]
@@ -50,3 +51,4 @@ for i in range(5):
 
 print("\nМатрица перевозок:")
 print(x_optimal.round().astype(int))
+
