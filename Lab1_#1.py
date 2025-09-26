@@ -1,13 +1,5 @@
 import numpy as np
-maxmin = np.array([[5,9,7,7,8],[5,5,7,0,2],[12,8,10,6,11],[11,8,2,12,10],[8,7,0,4,10]])
-lower_price = max([min(x) for x in maxmin])
-print(lower_price)
-upper_price = min([max(x) for x in np.rot90(maxmin)])
-print(upper_price)
-maxmin = np.array([[5,9,7,7,8],[5,5,7,0,2],[12,8,10,6,11],[11,8,2,12,10],[8,7,0,4,10]])
-lower_price = max([min(x) for x in maxmin])
-upper_price = min([max(x) for x in np.rot90(maxmin)])
-print(upper_price, lower_price)
+
 matrix  = np.array([[5,9,7,7,8],[5,5,7,0,2],[12,8,10,6,11],[11,8,2,12,10],[8,7,0,4,10]])
 q=[0.0, 0.0, 0.71, 0.29, 0.0]
 p=[0.0, 0.0, 0.43, 0.57, 0.0]
@@ -25,3 +17,4 @@ else:
     answer["H(P,B{})".format(k)]=sum([x*y for x,y in zip(i,p)])
 for i in [(x,y) for x,y in answer.items()]:
   print("Ответ выйгрыш игрока А в ситуации {0[0]} = {0[1]}".format(i))
+print(upper_price, lower_price)
